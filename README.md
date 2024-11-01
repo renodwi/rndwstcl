@@ -48,6 +48,6 @@ y_testing unit-tests, you should indicate to readers what to expect below here.
 
 To test, simply run the package:
 
-``bash
+```bash
 sampctl package run
 ```

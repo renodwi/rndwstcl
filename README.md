@@ -20,6 +20,7 @@ Include in your code and begin using the library:
 
 ## Usage
 
+```pawn
 YCMD:test(playerid, params[], help)
 {
     ShowPlayerColorList(playerid, ColorList, "Ini Caption", "Button 1", "Button 2");
@@ -34,6 +35,7 @@ ColorSelector:ColorList(playerid, response, color)
     printf("playerid: %d response: %d color: %d", playerid, response, color);
     return 1;
 }
+```
 
 ## Testing
 

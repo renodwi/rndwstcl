@@ -8,13 +8,13 @@ This is a library made to facilitate the selection of colors for players. Using 
 
 Simply install to your project:
 
-``bash
+```bash
 sampctl package install renodwi/RndwstCL
 ```
 
 Include in your code and start using the library:
 
-``pawn
+```pawn
 #include <RndwstCL>
 ```
 

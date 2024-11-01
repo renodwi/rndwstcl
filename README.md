@@ -2,19 +2,19 @@
 
 [![sampctl](https://img.shields.io/badge/sampctl-RndwstCL-2f2f2f.svg?style=for-the-badge)](https://github.com/renodwi/RndwstCL)
 
-ini merupakan library yang dibuat untuk memudahkan pemilihan warna untuk pemain. Penggunaan kodenya sangat mudah, contohnya sebagai berikut
+This is a library made to facilitate the selection of colors for players. Using the code is very easy, for example as follows
 
 ## Installation
 
 Simply install to your project:
 
-```bash
+``bash
 sampctl package install renodwi/RndwstCL
 ```
 
-Include in your code and begin using the library:
+Include in your code and start using the library:
 
-```pawn
+``pawn
 #include <RndwstCL>
 ```
 
@@ -23,29 +23,31 @@ Include in your code and begin using the library:
 ```pawn
 YCMD:test(playerid, params[], help)
 {
-    ShowPlayerColorList(playerid, ColorList, "Ini Caption", "Button 1", "Button 2");
+    ShowPlayerColorList(playerid, ColorList, “This is Caption”, “Button 1”, “Button 2”);
     return 1;
 }
 
-// Kemudian dari fungsi diatas, response dialog akan ditangkap dengan
+// Then from the above function, the dialog response will be captured with
 
 ColorSelector:ColorList(playerid, response, color)
 {
-    // Debuging
-    printf("playerid: %d response: %d color: %d", playerid, response, color);
+    // Debugging
+    printf(“playerid: %d response: %d color: %d”, playerid, response, color);
     return 1;
 }
+
+// IMPORTANT NOTE: THE OUTPUT OF THE COLOR SELECTED BY THE PLAYER IS IN RGBA FORMAT!!!
 ```
 
 ## Testing
 
 <!--
-Depending on whether your package is tested via in-game "demo tests" or
+Depending on whether your package is tested via in-game “demo tests” or
 y_testing unit-tests, you should indicate to readers what to expect below here.
 -->
 
 To test, simply run the package:
 
-```bash
+``bash
 sampctl package run
 ```
